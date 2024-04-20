@@ -1,0 +1,11 @@
+.idea
+node_modules
+vendor
+public/uploads/*
+.vagrant
+Vagrantfile
+*.sql
+Homestead.yaml
+bower_components
+.env
+.DS_Store

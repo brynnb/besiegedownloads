@@ -1,0 +1,329 @@
+
+/* Medium devices (desktops, 992px and up) */
+@media (max-width: $screen-lg-min) {
+    .post {
+        .share-link {
+
+            width: 100%;
+
+            input {
+                width: 100%;
+            }
+
+        }
+    }
+
+    .s-image {
+        height:273.333px;
+    }
+
+}
+
+/* Small devices (tablets, 900ish and up) */
+@media (max-width: $screen-md-min) {
+    .s-image {
+        height:330px;
+    }
+
+    img.ellipse {
+        position: absolute;
+        z-index: 2;
+    }
+
+    .login-container.banner {
+        background-image: none;
+        display: none;
+    }
+
+    .tablet-spacer {
+        height: 90px;
+        background: $backgroundGrey;
+    }
+
+    .tablet-login-link {
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 85px;
+        color: $tealFont;
+        width: 150px;
+        border-bottom: 1px solid rgba(0, 193, 213, 0.42);
+    }
+
+    .search-container .input-group-btn:last-child > .btn, .search-container .input-group-btn:last-child > .btn-group {
+        z-index: 3;
+    }
+
+
+    div.header-woodbar .tagline {
+        width: calc(100% - 505px);
+    }
+
+
+}
+
+/* Phones (768px and under) */
+@media (max-width: $screen-sm-min) {
+
+    .s-block{
+        display: none;
+    }
+
+    .hidden-xs {
+        display: none !important;
+    }
+
+    .visible-xs {
+        display: block !important;
+    }
+
+    .post {
+
+        .instructions {
+            display: none;
+        }
+
+        .main-download {
+            right: 0px;
+            button {
+                font-size: 1em;
+            }
+        }
+
+        h2.title {
+            padding-right: 0px;
+        }
+
+        .main-image, .description {
+            width: 100%;
+            float: none;
+            margin: 0 auto;
+        }
+
+        .description {
+            padding-left: 0px;
+            margin-top: 20px;
+        }
+
+        .actions {
+            button {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .nav > li > a:hover, .nav > li > a:focus {
+        background-color: rgba(0, 0, 0, 0.47);
+    }
+
+    .navbar-toggle {
+        background-color: $taglineGreen;
+        @include border-radius($defaultBorderRadius);
+        width: 65px;
+        margin-right: 10px;
+        font-size: 1.5em;
+        box-shadow: 0px 0px 2px black;
+    }
+
+    header {
+
+        background: url("/img/headerbackground3.png");
+
+
+        .navbar {
+            height: auto;
+        }
+
+        a.logo > img {
+            display: none;
+            box-shadow: none;
+            position: relative;
+            top: 0px;
+        }
+
+        .mobile-logo {
+            margin-left: 20px;
+            margin-top: 5px;
+            max-width: calc(100% - 125px);
+        }
+
+        .container > .navbar-header {
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+
+        .navbar-nav {
+            margin-bottom: 0;
+            width: auto;
+            margin-right: 0px;
+            background-image: url('/img/mobileheaderbackground.png');
+
+            li {
+                float: none;
+                margin-top: 0px;
+            }
+
+            .dropdown-header {
+                //background-color: rgba(255, 0, 0, 0.68);
+                //color: white;
+                //background-color: rgba(255, 0, 0, 0.65);
+                background-color: rgb(111, 0, 0);
+                color: white;
+                border-top: 1px solid white;
+            }
+
+            .btn {
+               background-color: rgba(76, 61, 61, 0.57);
+            }
+
+            .btn.nav-active {
+                background-color: rgba(76, 61, 61, 0.15);
+            }
+
+        }
+    }
+
+    .store-header {
+
+        .btn.visit-merchant-website {
+            margin: 0 auto;
+            display: block;
+        }
+
+        .store-description {
+            padding-right: 0px;
+        }
+
+    }
+
+    .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .row {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .main-content {
+        padding: 10px 5px;
+    }
+
+    .share-stack {
+        display: none;
+    }
+
+    #user-dropdown {
+        position: relative;
+        width: calc(100% - 50px);
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        max-width: 450px;
+        top: 0;
+
+    }
+
+    header .search-container {
+       display: none;
+    }
+
+    header .search-container.on-search-page {
+        top: 0px;
+        position: fixed;
+        z-index: 12;
+    }
+
+    div.header-woodbar {
+        text-align: center;
+        height: 25px;
+
+        .tagline {
+            width: 100%;
+            padding: 0 10px;
+        }
+
+        img.ellipse {
+            display: none;
+        }
+    }
+
+    .login-container {
+        margin-right: -66px;
+        margin-top: -58px;
+    }
+
+    section.result-grid {
+        padding: 0px;
+    }
+
+    .result-grid .col-xs-6 {
+        padding: 0 5px;
+    }
+
+    section.result-grid {
+
+        :nth-child(odd).col-xs-6 {
+            padding-right:2px;
+            padding-left:0px;
+        }
+
+        :nth-child(even).col-xs-6 {
+            padding-right:0px;
+            padding-left:2px;
+        }
+
+        div.tile {
+            margin-bottom: 5px;
+        }
+
+
+
+    }
+
+    //because algolia wraps results in extra div, previous padding doesn't work
+    section.result-grid {
+        .ais-hits {
+
+            :nth-child(odd).col-xs-6 {
+                padding-right: 0px;
+                padding-left: 0px;
+            }
+
+            :nth-child(even).col-xs-6 {
+                padding-right: 0px;
+                padding-left: 0px;
+            }
+
+            :nth-child(odd).ais-hits--item {
+                .col-xs-6 {
+                    padding-right:2px;
+                    padding-left:0px;
+                }
+            }
+
+            :nth-child(even).ais-hits--item {
+                .col-xs-6 {
+                    padding-right:0px;
+                    padding-left:2px;
+                }
+            }
+
+        }
+    }
+
+    section.result-grid div.tile {
+        padding: 5px;
+    }
+
+    section.result-grid .result-thumbnail {
+        margin: 0 auto;
+    }
+
+    .tile:hover .title {
+        transition: all .3s;
+        opacity: 0;
+    }
+}
